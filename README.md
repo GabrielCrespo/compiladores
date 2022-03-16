@@ -1,7 +1,7 @@
 # Compiladores
 
 ## Introducão
-> Disciplina de Compiladores - Universidade de Brásilia 2022/01
+> Disciplina de Compiladores - Universidade de Brásilia 2022/01\
 Wellington Stanley 110143981
 Walyson Maxwel - 140087851\
 Gabriel Crespo 140139982\
