@@ -1,5 +1,6 @@
+#line 2 "build/lex.c"
 
-#line 3 "lex.yy.c"
+#line 4 "build/lex.c"
 
 #define  YY_INT_ALIGNED short int
 
@@ -510,9 +511,9 @@ int yy_flex_debug = 0;
 #define YY_MORE_ADJ 0
 #define YY_RESTORE_YY_MORE_OFFSET
 char *yytext;
-#line 1 "src/lexico.l"
+#line 1 "src_flex/lexico.l"
 #define YY_NO_INPUT 1
-#line 6 "src/lexico.l"
+#line 6 "src_flex/lexico.l"
  #include <stdio.h>
  #include <stdlib.h>
  #include <string.h>
@@ -524,9 +525,9 @@ int lineno = 1, column = 1;
 
 void error_handler(char *token, int line, int column);
 
-#line 528 "lex.yy.c"
+#line 529 "build/lex.c"
 
-#line 530 "lex.yy.c"
+#line 531 "build/lex.c"
 
 #define INITIAL 0
 #define MULTI_LINE_COMMENT 1
@@ -742,10 +743,10 @@ YY_DECL
 		}
 
 	{
-#line 28 "src/lexico.l"
+#line 28 "src_flex/lexico.l"
 
 
-#line 749 "lex.yy.c"
+#line 750 "build/lex.c"
 
 	while ( /*CONSTCOND*/1 )		/* loops until end-of-file is reached */
 		{
@@ -814,204 +815,204 @@ do_action:	/* This label is used only to access EOF actions. */
 
 case 1:
 YY_RULE_SETUP
-#line 30 "src/lexico.l"
+#line 30 "src_flex/lexico.l"
 {
    BEGIN(MULTI_LINE_COMMENT);
 }
 	YY_BREAK
 case 2:
 YY_RULE_SETUP
-#line 34 "src/lexico.l"
+#line 34 "src_flex/lexico.l"
 {
    BEGIN(INITIAL);
 }
 	YY_BREAK
 case 3:
 YY_RULE_SETUP
-#line 38 "src/lexico.l"
+#line 38 "src_flex/lexico.l"
 
 	YY_BREAK
 case 4:
 YY_RULE_SETUP
-#line 40 "src/lexico.l"
+#line 40 "src_flex/lexico.l"
 
 	YY_BREAK
 case 5:
 /* rule 5 can match eol */
 YY_RULE_SETUP
-#line 42 "src/lexico.l"
+#line 42 "src_flex/lexico.l"
 {
    lineno++;
 }
 	YY_BREAK
 case 6:
 YY_RULE_SETUP
-#line 46 "src/lexico.l"
+#line 46 "src_flex/lexico.l"
 { fprintf(yyout,"[Else, %s]\n",yytext); column+=strlen(yytext); }
 	YY_BREAK
 case 7:
 YY_RULE_SETUP
-#line 47 "src/lexico.l"
+#line 47 "src_flex/lexico.l"
 { fprintf(yyout,"[If, %s]\n",yytext); column+=strlen(yytext); }
 	YY_BREAK
 case 8:
 YY_RULE_SETUP
-#line 48 "src/lexico.l"
+#line 48 "src_flex/lexico.l"
 { fprintf(yyout,"[Int, %s]\n",yytext); column+=strlen(yytext); }
 	YY_BREAK
 case 9:
 YY_RULE_SETUP
-#line 49 "src/lexico.l"
+#line 49 "src_flex/lexico.l"
 { fprintf(yyout,"[Return, %s]\n",yytext); column+=strlen(yytext); }
 	YY_BREAK
 case 10:
 YY_RULE_SETUP
-#line 50 "src/lexico.l"
+#line 50 "src_flex/lexico.l"
 { fprintf(yyout,"[Void, %s]\n",yytext); column+=strlen(yytext); }
 	YY_BREAK
 case 11:
 YY_RULE_SETUP
-#line 51 "src/lexico.l"
+#line 51 "src_flex/lexico.l"
 { fprintf(yyout,"[While, %s]\n",yytext); column+=strlen(yytext); }
 	YY_BREAK
 case 12:
 YY_RULE_SETUP
-#line 54 "src/lexico.l"
+#line 53 "src_flex/lexico.l"
 { fprintf(yyout,"[Identifier, %s]\n",yytext);  column+=strlen(yytext); }
 	YY_BREAK
 case 13:
 YY_RULE_SETUP
-#line 55 "src/lexico.l"
+#line 54 "src_flex/lexico.l"
 { fprintf(yyout,"[Int_Literal, %s]\n",yytext); column+=strlen(yytext); }
 	YY_BREAK
 case 14:
 YY_RULE_SETUP
-#line 56 "src/lexico.l"
+#line 55 "src_flex/lexico.l"
 { fprintf(yyout,"[Float, %s]\n",yytext); 				column+=strlen(yytext);	}
 	YY_BREAK
 case 15:
 /* rule 15 can match eol */
 YY_RULE_SETUP
-#line 57 "src/lexico.l"
+#line 56 "src_flex/lexico.l"
 { fprintf(yyout,"[String, %s]\n",yytext); column+=strlen(yytext); }
 	YY_BREAK
 case 16:
 YY_RULE_SETUP
-#line 60 "src/lexico.l"
+#line 59 "src_flex/lexico.l"
 { fprintf(yyout,"[Sum, %s]\n",yytext); column+=strlen(yytext); }
 	YY_BREAK
 case 17:
 YY_RULE_SETUP
-#line 61 "src/lexico.l"
+#line 60 "src_flex/lexico.l"
 { fprintf(yyout,"[Subtract, %s]\n",yytext); column+=strlen(yytext); }
 	YY_BREAK
 case 18:
 YY_RULE_SETUP
-#line 62 "src/lexico.l"
+#line 61 "src_flex/lexico.l"
 { fprintf(yyout,"[Multiply, %s]\n",yytext); column+=strlen(yytext); }
 	YY_BREAK
 case 19:
 YY_RULE_SETUP
-#line 63 "src/lexico.l"
+#line 62 "src_flex/lexico.l"
 { fprintf(yyout,"[Division, %s]\n",yytext); column+=strlen(yytext); }
 	YY_BREAK
 case 20:
 YY_RULE_SETUP
-#line 65 "src/lexico.l"
+#line 64 "src_flex/lexico.l"
 { fprintf(yyout,"[LT, %s]\n",yytext); column+=strlen(yytext); }
 	YY_BREAK
 case 21:
 YY_RULE_SETUP
-#line 66 "src/lexico.l"
+#line 65 "src_flex/lexico.l"
 { fprintf(yyout,"[GT, %s]\n",yytext); column+=strlen(yytext); }
 	YY_BREAK
 case 22:
 YY_RULE_SETUP
-#line 67 "src/lexico.l"
+#line 66 "src_flex/lexico.l"
 { fprintf(yyout,"[LE, %s]\n",yytext); column+=strlen(yytext); }
 	YY_BREAK
 case 23:
 YY_RULE_SETUP
-#line 68 "src/lexico.l"
+#line 67 "src_flex/lexico.l"
 { fprintf(yyout,"[GE, %s]\n",yytext); column+=strlen(yytext); }
 	YY_BREAK
 case 24:
 YY_RULE_SETUP
-#line 70 "src/lexico.l"
+#line 69 "src_flex/lexico.l"
 { fprintf(yyout,"[Equal, %s]\n",yytext); column+=strlen(yytext); }
 	YY_BREAK
 case 25:
 YY_RULE_SETUP
-#line 71 "src/lexico.l"
+#line 70 "src_flex/lexico.l"
 { fprintf(yyout,"[Diff, %s]\n",yytext); 	column+=strlen(yytext); }
 	YY_BREAK
 case 26:
 YY_RULE_SETUP
-#line 73 "src/lexico.l"
+#line 72 "src_flex/lexico.l"
 { fprintf(yyout,"[Assign, %s]\n",yytext); column+=strlen(yytext); }
 	YY_BREAK
 case 27:
 YY_RULE_SETUP
-#line 75 "src/lexico.l"
+#line 74 "src_flex/lexico.l"
 { fprintf(yyout,"[Semi, %s]\n",yytext); column+=strlen(yytext); }
 	YY_BREAK
 case 28:
 YY_RULE_SETUP
-#line 76 "src/lexico.l"
+#line 75 "src_flex/lexico.l"
 { fprintf(yyout,"[Comma, %s]\n",yytext); column+=strlen(yytext); }
 	YY_BREAK
 case 29:
 YY_RULE_SETUP
-#line 77 "src/lexico.l"
+#line 76 "src_flex/lexico.l"
 { fprintf(yyout,"[LP, %s]\n",yytext); column+=strlen(yytext); }
 	YY_BREAK
 case 30:
 YY_RULE_SETUP
-#line 78 "src/lexico.l"
+#line 77 "src_flex/lexico.l"
 { fprintf(yyout,"[RP, %s]\n",yytext); column+=strlen(yytext); }
 	YY_BREAK
 case 31:
 YY_RULE_SETUP
-#line 79 "src/lexico.l"
+#line 78 "src_flex/lexico.l"
 { fprintf(yyout,"[LB, %s]\n",yytext); column+=strlen(yytext); }
 	YY_BREAK
 case 32:
 YY_RULE_SETUP
-#line 80 "src/lexico.l"
+#line 79 "src_flex/lexico.l"
 { fprintf(yyout,"[RB, %s]\n",yytext); column+=strlen(yytext); }
 	YY_BREAK
 case 33:
 YY_RULE_SETUP
-#line 81 "src/lexico.l"
+#line 80 "src_flex/lexico.l"
 { fprintf(yyout,"[LCB, %s]\n",yytext); column+=strlen(yytext); }
 	YY_BREAK
 case 34:
 YY_RULE_SETUP
-#line 82 "src/lexico.l"
+#line 81 "src_flex/lexico.l"
 { fprintf(yyout,"[RCB, %s]\n",yytext); column+=strlen(yytext); }
 	YY_BREAK
 case 35:
 /* rule 35 can match eol */
 YY_RULE_SETUP
-#line 84 "src/lexico.l"
+#line 83 "src_flex/lexico.l"
 { lineno += 1; column=1; }
 	YY_BREAK
 case 36:
 YY_RULE_SETUP
-#line 86 "src/lexico.l"
+#line 85 "src_flex/lexico.l"
 { column+=strlen(yytext); }
 	YY_BREAK
 case 37:
 YY_RULE_SETUP
-#line 88 "src/lexico.l"
+#line 87 "src_flex/lexico.l"
 { column+=strlen(yytext); error_handler(yytext, lineno, column); }
 	YY_BREAK
 case 38:
 YY_RULE_SETUP
-#line 90 "src/lexico.l"
+#line 89 "src_flex/lexico.l"
 ECHO;
 	YY_BREAK
-#line 1015 "lex.yy.c"
+#line 1016 "build/lex.c"
 case YY_STATE_EOF(INITIAL):
 case YY_STATE_EOF(MULTI_LINE_COMMENT):
 	yyterminate();
@@ -1988,7 +1989,7 @@ void yyfree (void * ptr )
 
 #define YYTABLES_NAME "yytables"
 
-#line 90 "src/lexico.l"
+#line 89 "src_flex/lexico.l"
 
 
 void error_handler(char *token, int line, int column) {
