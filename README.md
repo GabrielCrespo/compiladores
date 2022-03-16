@@ -5,7 +5,7 @@
 Wellington Stanley 110143981
 Walyson Maxwel - 140087851\
 Gabriel Crespo 140139982\
-Rodrigo Neris 140161597\
+Rodrigo Neris 140161597
 
 > Desenvolvimento de um tradutor
 
