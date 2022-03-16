@@ -43,17 +43,17 @@ string   \"[^\"]*\"
    lineno++;
 }
 
-{id}				{ fprintf(yyout,"[Identifier, %s]\n",yytext);  column+=strlen(yytext); }
-{integer}		{ fprintf(yyout,"[Int_Literal, %s]\n",yytext); column+=strlen(yytext); }
-{float}			{ fprintf(yyout,"[Float, %s]\n",yytext); 				column+=strlen(yytext);	}
-{string}		{ fprintf(yyout,"[String, %s]\n",yytext); column+=strlen(yytext); }
-
 "else"      { fprintf(yyout,"[Else, %s]\n",yytext); column+=strlen(yytext); }
 "if"      	{ fprintf(yyout,"[If, %s]\n",yytext); column+=strlen(yytext); }
 "int"      	{ fprintf(yyout,"[Int, %s]\n",yytext); column+=strlen(yytext); }
 "return"    { fprintf(yyout,"[Return, %s]\n",yytext); column+=strlen(yytext); }
 "void"      { fprintf(yyout,"[Void, %s]\n",yytext); column+=strlen(yytext); }
 "while"     { fprintf(yyout,"[While, %s]\n",yytext); column+=strlen(yytext); }
+
+{id}				{ fprintf(yyout,"[Identifier, %s]\n",yytext);  column+=strlen(yytext); }
+{integer}		{ fprintf(yyout,"[Int_Literal, %s]\n",yytext); column+=strlen(yytext); }
+{float}			{ fprintf(yyout,"[Float, %s]\n",yytext); 				column+=strlen(yytext);	}
+{string}		{ fprintf(yyout,"[String, %s]\n",yytext); column+=strlen(yytext); }
 
 
 "+"      	 	{ fprintf(yyout,"[Sum, %s]\n",yytext); column+=strlen(yytext); }

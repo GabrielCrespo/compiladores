@@ -11,7 +11,7 @@ test345;
 [ ]
 ( )
 
-if else
+if else while int void
 
 < > <= >=
  
